@@ -30,16 +30,19 @@ int main()
 	
 	cout << "\nVehicle Program" << endl << endl;
 
+	cout << "\nVehicle";
 	cout << "\nEnter the maunfacturer . . .";
 	getline(cin, maunfacturer);
 
 	vehicle.Set_Manu(maunfacturer);
 
-	cout << "\nVehicle";
 	cout << "\nEnter the year built . . .";
 	getline(cin, date);
 
 	vehicle.Set_Built(date);
+
+	Display_Vehicles(vehicle);
+	cout << endl << endl;
 
 	cout << "\nCar";
 	cout << "\nEnter the maunfacturer . . .";
@@ -57,6 +60,9 @@ int main()
 
 	car.Set_Doors(numD);
 
+	Display_Vehicles(car);
+	cout << endl << endl;
+
 	cout << "\nTruck";
 	cout << "\nEnter the maunfacturer . . .";
 	getline(cin, maunfacturer);
@@ -72,12 +78,6 @@ int main()
 	cin >> towCap;
 
 	truck.Set_Towing(towCap);
-
-	Display_Vehicles(vehicle);
-	cout << endl << endl;
-
-	Display_Vehicles(car);
-	cout << endl << endl;
 
 	Display_Vehicles(truck);
 	cout << endl << endl;
