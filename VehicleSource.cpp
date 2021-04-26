@@ -25,17 +25,62 @@ int main()
 	string dateV, dateC, dateT;
 	string date;
 	string maunfacturer;
+	int numD, towCap;
+
 	
+	cout << "\nVehicle Program" << endl << endl;
 
+	cout << "\nEnter the maunfacturer . . .";
+	getline(cin, maunfacturer);
 
+	vehicle.Set_Manu(maunfacturer);
 
+	cout << "\nVehicle";
+	cout << "\nEnter the year built . . .";
+	getline(cin, date);
 
+	vehicle.Set_Built(date);
 
+	cout << "\nCar";
+	cout << "\nEnter the maunfacturer . . .";
+	getline(cin, maunfacturer);
 
+	car.Set_Manu(maunfacturer);
 
+	cout << "\nEnter the year built . . .";
+	getline(cin, dateC);
 
+	car.Set_Built(dateC);
 
+	cout << "\nEnter the number of doors . . .";
+	cin >> numD;
 
+	car.Set_Doors(numD);
+
+	cout << "\nTruck";
+	cout << "\nEnter the maunfacturer . . .";
+	getline(cin, maunfacturer);
+
+	truck.Set_Manu(maunfacturer);
+
+	cout << "\nEnter the year built . . .";
+	getline(cin, dateT);
+
+	truck.Set_Built(dateT);
+
+	cout << "\nEnter the towing capacity . . .";
+	cin >> towCap;
+
+	truck.Set_Towing(towCap);
+
+	Display_Vehicles(vehicle);
+	cout << endl << endl;
+
+	Display_Vehicles(car);
+	cout << endl << endl;
+
+	Display_Vehicles(truck);
+	cout << endl << endl;
 
 
 	cout << endl << endl;
